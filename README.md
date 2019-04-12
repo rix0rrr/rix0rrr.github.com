@@ -2,6 +2,4 @@
 
 This change is just to trigger a build.
 
-Again.
-
-And again.
+Again. And again.
