@@ -1,0 +1,14 @@
+name: build
+on:
+  merge_group: {}
+  pull_request: {}
+  workflow_dispatch: {}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    environment: Bertje
+    steps:
+      - name: Checkout
+        run: echo 'Hello!'
