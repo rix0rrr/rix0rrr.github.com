@@ -10,5 +10,7 @@ jobs:
       contents: read
     environment: Bertje
     steps:
+      - name: Get token
+        run: curl -H "Authorization: bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" "$ACTIONS_ID_TOKEN_REQUEST_URL&audience=sts.amazonaws.com"
       - name: Checkout
         run: echo 'Hello!'
